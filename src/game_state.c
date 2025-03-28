@@ -91,15 +91,11 @@ run_game(int grid[GRID_SIZE][GRID_SIZE], int uno[GRID_SIZE][GRID_SIZE],
                 }
                 else if (winner == 2)
                 {
-                    printf("Player 2 (Tres) wins!\n");
+                    printf("Game Over! The board is full, (Dos) wins!.\n");
                 }
                 else if (winner == 3)  // Board Full
                 {
-                    printf("Game Over! The board is full, no winner.\n");
-                }
-                else if (winner == 4)  // Dos Wins
-                {
-                    printf("Player 3 (Dos) wins!\n");
+                    printf("Player 3 (Tres) wins!\n");
                 }
                 *over = 1;  // Set game over flag
             }
